@@ -1,120 +1,81 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
+    margin: 0;
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
+    color: white;
+    background-color: navy;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
-
-header {
-    background: #002f6c; /* Navy blue */
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-header h1 {
-    margin-bottom: 10px;
-    font-size: 2.5em;
-}
-
-header p {
-    font-size: 1.2em;
-}
-
-section {
-    padding: 20px 0;
-}
-
-h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #002f6c; /* Navy blue */
-}
-
-.service, .portfolio-item {
-    background: #fff;
-    margin: 20px 0;
+.header {
+    display: flex;
+    justify-content: space-between;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: #000080;
 }
 
-.service h3 {
-    color: #002f6c; /* Navy blue */
-    margin-bottom: 10px;
+.logo {
+    display: flex;
+    align-items: center;
 }
 
-.portfolio-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
+.brand-name {
+    font-size: 24px;
+    color: navy;
+    margin-left: 10px;
 }
 
 .contact-info {
-    list-style: none;
-    padding: 0;
-}
-
-.contact-info li {
-    margin: 10px 0;
+    display: flex;
+    align-items: center;
 }
 
 .contact-info a {
-    color: #002f6c; /* Navy blue */
+    margin-left: 20px;
+    color: white;
     text-decoration: none;
 }
 
-form {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-form label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-form input, form textarea {
+.main-banner {
+    position: relative;
     width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    height: 80vh;
 }
 
-form button {
-    background: #002f6c; /* Navy blue */
-    color: #fff;
+#background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.cta-button {
+    background-color: navy;
+    color: white;
     border: none;
-    padding: 10px 15px;
-    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 18px;
     cursor: pointer;
-    font-size: 1em;
 }
 
-form button:hover {
-    background: #003f7c; /* Slightly darker navy blue */
+.services, .why-us, .clients {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.service-item {
+    margin: 20px 0;
 }
 
 footer {
-    background: #002f6c; /* Navy blue */
-    color: #fff;
+    padding: 20px;
+    background-color: #000080;
     text-align: center;
-    padding: 10px 0;
-}
-
-footer p {
-    margin: 10px 0;
 }
